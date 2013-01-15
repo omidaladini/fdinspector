@@ -1,4 +1,4 @@
-This is a little piece of code that for a given PID reports the available bytes in its stdin and stdout. Can be used to inspect pipe congestions.
+This is a little piece of code that for a given PID reports the available bytes in its stdin and stdout buffers. That's equal to the number of bytes you could read with a non-blocking read from the pipe. Can be used to inspect pipe congestion when compared to the max buffer size. 
 
 You might have to run this program with appropriate user to be able to peek into PID's file descriptors.
 
