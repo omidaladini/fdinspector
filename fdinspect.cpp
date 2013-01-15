@@ -33,6 +33,10 @@ int main(int argc, char* argv[]) {
   cout << PID << tab << report_buffer_size(fd_in) 
               << tab << report_buffer_size(fd_out) 
               << endl;
+
+  close(fd_in);
+  close(fd_out);
+
 }
 
 int report_buffer_size(int fd) {
