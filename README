@@ -1,0 +1,9 @@
+This is a little piece of code that for a given PID reports the available bytes in its stdin and stdout. Can be used to inspect pipe congestions.
+
+You might have to run this program with appropriate user to be able to peek into PID's file descriptors.
+
+Usage: fdinspect PID
+
+Or you can invoke it in recurrent intervals.
+
+
